@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="scripts.js" defer></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <h2 id="title" class="no-copy">Password Generator</h2>
+
+      <div id="result">
+        <h2></h2>
+        <div class="copy-item"><i class="fas fa-clipboard" id="copy"></i></div>
+      </div>
+
+      <div class="includes no-copy">
+        <div class="password-length">
+          <h4>password length</h4>
+          <input
+            type="text"
+            name="length"
+            id="pass-length"
+            title="pass-length"
+            value="2"
+          />
+        </div>
+
+        <div class="uppercase-letters">
+          <h4>include uppercase letters</h4>
+          <input
+            type="checkbox"
+            name="uppercase-check"
+            id="uppercase"
+            title="include uppercase letters"
+          />
+        </div>
+
+        <div class="lowercase-letters">
+          <h4>include lowercase letters</h4>
+          <input
+            type="checkbox"
+            name="lowercase-check"
+            id="lowercase"
+            title="include lowercase letters"
+          />
+        </div>
+
+        <div class="numbers">
+          <h4>include numbers</h4>
+          <input
+            type="checkbox"
+            name="numbers"
+            id="numbers"
+            title="include numbers"
+          />
+        </div>
+
+        <div class="symbols">
+          <h4>include symbols</h4>
+          <input
+            type="checkbox"
+            name="symbols"
+            id="symbols"
+            title="include symbols"
+          />
+        </div>
+      </div>
+      <div class="generate-pass no-copy">Generate Password</div>
+    </div>
+  </body>
+</html>
